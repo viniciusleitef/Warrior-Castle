@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+    
+    <section class="screen">
+
+        <div class="message">
+
+        </div>
+
+        <div class="personagem">
+            <h1>Mates</h1>
+
+            <div class="atributo">
+                <span class="atributo-label" id="lvl">Nível: 1</span>
+            </div>
+
+            <div class="atributo">
+                <span class="atributo-label" id="life">Vida: 100 / 100</span>
+            </div>
+
+            <div class="atributo">
+                <span class="atributo-label" id="xp">XP: 0 / 100</span>
+            </div>
+
+            <div class="atributo">
+                <span class="atributo-label" id="cura">Poções de Cura: 5</span>
+            </div>
+
+            <div class="atributo">
+                <span class="atributo-label" id="esquiva" >Chance de Esquiva: 10%</span>
+            </div>
+
+            <div class="atributo">
+                <span class="atributo-label" id="dano" >Dano: 15</span> 
+            </div>
+
+            <div class="atributo">
+                <span class="atributo-label" id="fugas" >Fugas disponíveis: 3</span> 
+            </div>
+        </div>
+        <!-- MENU INICIAL -->
+        <div id="menu">
+
+            <h1>Warrior Castles</h1>
+    
+            <div class="start_button" >
+                <button>Start</button>
+            </div>
+
+        </div>
+
+        <!-- EXPLORAR CASTELO OU DESISTIR -->
+        <div class="menu_in_game">
+            <h1>Você deseja explorar um novo comodo ou desistir?</h1>
+    
+            <div class="botoes_perguntas_box">
+                <a class="botoes_perguntas" id="botoes_perguntas_1"><span>Explorar</span></a>
+                <a class="botoes_perguntas" id="botoes_perguntas_2"><span>Desistir</span></a>
+            </div>
+        </div>
+        <!-- TELA ACHOU BAÚ -->
+        <div class="menu_exploring_chest">
+            <h1>Você entrou em uma sala vazia e encontrou um baú!</h1>
+
+            <div class="botoes_perguntas_box">
+                <a class="botoes_perguntas" id="botoes_abrir_bau"><span>Abrir baú!</span></a>
+            </div>
+        </div>
+
+        <!-- TELA ACHOU MONSTRO -->
+
+        <div class="menu_exploring">
+            <h1>Um inimigo <span id="type_enemy"></span> apareceu!</h1>
+
+            <div class="status_monstro">
+
+            </div>
+
+            <div class="botoes_perguntas_box">
+                <a class="botoes_perguntas" id="botoes_perguntas_combat_1"><span>Atacar</span></a>
+                <a class="botoes_perguntas" id="botoes_perguntas_combat_2"><span>Poção</span></a>
+                <a class="botoes_perguntas" id="botoes_perguntas_combat_3"><span>Fugir</span></a>
+            </div>
+        </div>
+
+        <!-- TELA FINAL E PONTUAÇÃO -->
+        <div class="menu_tela_final">
+            <h1>Você saiu do castelo!</h1>
+            <p>Fim!</p>
+            <h2>Pontuação: 0</h2>
+        </div>
+    </section>
+    
+
+    <script type="module" src="scripts/main.js"></script>
+</body>
+</html>
